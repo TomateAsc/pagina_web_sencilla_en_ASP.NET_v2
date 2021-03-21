@@ -1,0 +1,238 @@
+﻿/*color de fondo*/
+body {
+    background-color: #1d7c64;
+    background: url(../pics/jb-bdsm-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+p img {
+    width: 100%;
+    height: 100%;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/*imagen de la parte de arriba (top)*/
+.Top_I {
+    top: 100px;
+}
+
+/*barra de navegacion*/
+.barra-nav {
+    display: inline-block;
+    background: #FFB6C1;
+    color: black;
+    padding: 10px 30px;
+}
+
+    .barra-nav:hover {
+        background: #1d657c;
+    }
+
+.barra-mapa {
+    background: #8B0000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+/*textos - marca de la empresa y slogan - */
+.nombre {
+    background-color: #8B0000;
+    font-size: 50px;
+    font-family: fantasy;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 40px;
+    opacity: .85;
+}
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    right: 45px;
+    background-color: #8B0000;
+    color: white;
+    opacity: .85;
+}
+/*buscador y boton de inicio de sesion*/
+.buscar {
+    float: left;
+    text-align: center;
+    padding: 10px 10px;
+}
+.buscar1 {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    padding: 10px 10px;
+}
+.login {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    padding: 10px 10px;
+}
+/*barra de abajo*/
+footer {
+    clear: both;
+    font-family: arial;
+    color: white;
+    background-color: #8B0000;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+/*barra de navegacion pero para cuando se hace pequeña la pagina*/
+.barra-boton {
+    display: inline-block;
+    background: #1d657c;
+    color: #fff;
+    padding: 10px 30px;
+    display: none;
+}
+
+    .barra-boton:hover {
+        background: #351d7c;
+    }
+/*texto de los parrafos centrales*/
+
+.cuerpo {
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+.estilop1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.estilop2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin: 10px;
+}
+
+.estilop3 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d0d0d0;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+}
+
+.estilopx {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+@media (max-width: 830px) {
+    /*textos - marca de la empresa y slogan - */
+    .nombre {
+        font-size: 30px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .barra-boton {
+        display: inline-block;
+    }
+
+    .barra-mapa {
+        flex-direction: column;
+    }
+
+    .eliminar {
+        display: none;
+    }
+
+    .barra-mapa {
+        justify-content: initial;
+    }
+
+    .estilop1 {
+        flex-direction: column;
+    }
+
+    .estilop2 {
+        flex-direction: column;
+    }
+
+    .estilop3 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    /*textos - marca de la empresa y slogan - */
+    .nombre {
+        font-size: 25px;
+    }
+
+    .titulo {
+        font-size: 15px;
+    }
+
+    .barra-boton {
+        display: inline-block;
+    }
+
+    .barra-mapa {
+        flex-direction: column;
+    }
+
+    .eliminar {
+        display: none;
+    }
+
+    .barra-mapa {
+        justify-content: initial;
+    }
+
+    .estilop1 {
+        flex-direction: column;
+    }
+
+    .estilop2 {
+        flex-direction: column;
+    }
+
+    .estilop3 {
+        flex-direction: column;
+    }
+}

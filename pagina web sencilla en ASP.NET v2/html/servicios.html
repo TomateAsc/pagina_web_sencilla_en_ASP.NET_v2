@@ -1,0 +1,87 @@
+﻿<doctype html>
+    <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Men&uacute; Nav en HTML
+        </title>
+        <meta name="viewport" content="width=device-width, initial- scale=1">
+        <link rel="stylesheet" href="../css/index.css" type="text/css" />
+
+        <script>
+            function acction() {
+                var yarp = document.getElementsByClassName('barra-nav');
+                for (var i = 0; i < yarp.length; i++) {
+                    yarp[i].classList.toggle('eliminar')
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="nombre">
+                <b>FreeDOM</b>
+            </div>
+            <div class="Top_I">
+                <img src="../pics/top-free.jpg" width=100% height="200" alt="imagen de top p&aacute;gina">
+            </div>
+            <div class="titulo">
+                <b>Más que una sex shop un concepto de vida</b>
+            </div>
+            <div class="login">
+                <a title="login_pic" href="error2.html"><img src="../pics/login.png" width="140" height="56" title="login_pic" alt="imagen de login"></a>
+            </div>
+        </header>
+        <nav class="barra-mapa">
+            <button class="barra-boton" onclick="acction()">Men&uacute;</button>
+            <a href="..\index.html" class="barra-nav eliminar">Inicio</a>
+            <a href="servicios.html" class="barra-nav eliminar">¿Quiénes Somos?</a>
+            <a href="Soporte.html" class="barra-nav eliminar">Contacto</a>
+            <a href="Conferencias.html" class="barra-nav eliminar">Conferencias</a>
+            <a href="productos.html" class="barra-nav eliminar">Productos</a>
+        </nav>
+        <div class="cuerpo">
+
+            <div class="estilop2">
+                <div>
+                    <h1>
+                        MISIÓN
+                    </h1>
+                    <p>
+                        Ser una empresa que por medio de un entorno educativo<br> genere una consciencia sexual de autoconocimiento,<br>
+                        que se practique de manera responsable y segura, libre de tabúes y sin inhibiciones.
+
+                    </p>
+                </div>
+                <div>
+                    <img src="..\pics\rastreo.JPG" width="280" height="200" alt="Imagen representativa del rastreo">
+                </div>
+            </div>
+            <div class="estilopx">
+                <p>
+                    <br>
+                </p>
+            </div>
+            <div class="estilop3">
+                <div>
+                    <img src="..\pics\pagina.jpg" width="220" height="180" alt="Imagen representativa del rastreo">
+                </div>
+                <div>
+                    <h1>
+                        VISIÓN
+                    </h1>
+                    <p>
+                        Ser reconocidos como una empresa Nacional en ventas de productos dirigidos<br> a la educación sexual y una mayor plenitud de la sexualidad.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Derechos reservados por diosito / *  *  \ FreeDOM y asociados<p>
+        </footer>
+    </body>
+
+
+</html>
